@@ -45,6 +45,8 @@ while True:
     success, img = cap.read()
     img = detector.findHands(img)
     lmList, bbox = detector.findPosition(img)
+    if len(lmList) == 0:
+        cv2.putText(img, "No Hand Detected", (20, 70), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 255), 2)
 
     #2. Get the tip of the index and the middle fingers
     if len(lmList)!=0:
