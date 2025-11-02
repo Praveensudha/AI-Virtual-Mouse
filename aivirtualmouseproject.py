@@ -25,6 +25,7 @@ pTime = 0
 plocX, plocY = 0, 0
 clocX, clocY = 0, 0
 
+cv2.namedWindow("AI Virtual Mouse", cv2.WINDOW_NORMAL)
 cap = cv2.VideoCapture(0)
 if not cap.isOpened():
     print("Error: Could not open camera")
