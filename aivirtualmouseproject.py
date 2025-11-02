@@ -73,6 +73,7 @@ while True:
             #7. Move mouse
             autopy.mouse.move(wScr-clocX, clocY)
             cv2.circle(img, (x1, y1), 15, (255, 0, 255), cv2.FILLED)
+            cv2.putText(img, f"Cursor: ({int(wScr-clocX)},{int(clocY)})", (10, 110), cv2.FONT_HERSHEY_PLAIN, 1, (255, 0, 255), 1)
             plocX, plocY = clocX, clocY
 
     #8. Both index and middle are up: Left Clicking mode
