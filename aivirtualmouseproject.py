@@ -18,7 +18,7 @@ captured through a webcam. Features include:
 # Configuration parameters
 wCam, hCam = 640, 480  # Camera resolution
 frameR = 100  # Frame Reduction for better boundary control
-smoothening = 7  # Mouse movement smoothing factor
+smoothening = 8  # Increased smoothening for more precise movement
 ##############################
 
 pTime = 0
