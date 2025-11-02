@@ -37,6 +37,7 @@ cap.set(4, hCam)
 detector = htm.handDetector(maxHands=1)
 try:
     wScr, hScr = autopy.screen.size()
+    print(f"Screen Resolution: {wScr}x{hScr}")
 except Exception as e:
     print(f"Error getting screen size: {e}")
     exit()
