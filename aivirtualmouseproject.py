@@ -83,6 +83,7 @@ while True:
             #10. Click mouse if distance short
             if length < 40:
                 cv2.circle(img, (lineInfo[4], lineInfo[5]), 15, (0,255,0), cv2.FILLED)
+                cv2.putText(img, "Click!", (lineInfo[4], lineInfo[5]-10), cv2.FONT_HERSHEY_PLAIN, 2, (0,255,0), 2)
                 autopy.mouse.click()
 
         #11. Index and pinky are up: Right Clicking mode
