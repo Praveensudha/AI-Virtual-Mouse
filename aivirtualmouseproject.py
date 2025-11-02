@@ -61,7 +61,7 @@ while True:
 
     #4. Only index finger: Moving mode
         if fingers[1]==1 and fingers[2]==0:
-
+            cv2.putText(img, "Moving Mode", (20, 90), cv2.FONT_HERSHEY_PLAIN, 2, (255, 0, 0), 2)
             #5. Convert Coordinates
             x3 = np.interp(x1, (frameR,wCam-frameR), (0,wScr))
             y3 = np.interp(y1, (frameR,hCam-frameR), (0,hScr))
