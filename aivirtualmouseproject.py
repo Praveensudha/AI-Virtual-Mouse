@@ -118,6 +118,7 @@ while True:
     #12. Display
     
     cv2.imshow("AI Virtual Mouse", img)
+    cv2.putText(img, "Press ESC to exit", (10, hCam - 20), cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
     if cv2.waitKey(1)  == 27:
         break
 cap.release()
